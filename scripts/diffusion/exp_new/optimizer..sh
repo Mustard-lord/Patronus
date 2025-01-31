@@ -1,0 +1,10 @@
+python diffusion_FT.py --gpus "0"  --root "./exp_nodetach/optimizer_whole" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'sgd' --module "lora" --finetune_lr 0.0001
+python diffusion_FT.py --gpus "0"  --root "./exp_nodetach/optimizer_whole" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'adade' --module "lora" --finetune_lr 0.0001
+python diffusion_FT.py --gpus "2"  --root "./exp_nodetach/optimizer_whole" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'rms' --module "lora" --finetune_lr 0.0001
+python diffusion_FT.py --gpus "2"  --root "./exp_nodetach/optimizer_whole" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'nes' --module "lora" --finetune_lr 0.0001
+
+
+python diffusion_FT.py --gpus "2"  --root "./exp_with1detach/optimizer_whole" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'adam' --module "lora" --finetune_lr 0.0001
+python diffusion_FT.py --gpus "1"  --root "./exp_with2detach/optimizer_whole" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'adam' --module "lora" --finetune_lr 0.0001
+
+python diffusion_FT.py --gpus "3"  --root "./exp_witnodetach/optimizer_filter" --strategy "whole" --checkpoint ../../code/bpalm/results_antift/9_19_21_25_48/checkpoints/ckpt_5199/LoRA_unet --FTAT_epoch 3 --optimizer 'adam' --module "lora" --finetune_lr 0.0001

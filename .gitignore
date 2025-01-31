@@ -1,0 +1,15 @@
+**/*.pt
+**/*.ckpt
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.json
+**/*.csv
+**/*.pth
+**/*.safetensors
+wandb/
+exp/
+plot/
+slurm/
+__pycache__/
+*.pyc
